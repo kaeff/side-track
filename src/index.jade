@@ -1,5 +1,24 @@
 doctype html
 html
-head
-body
-  p Hello World!
+  head
+    title TWEU Away Day 2014 - Schedule
+    meta(name="viewport",content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
+    link(rel='stylesheet',href='./style.css')
+    link(rel='stylesheet',href='./css/bootstrap.min.css')
+    link(rel='stylesheet',href='./css/bootstrap-theme.min.css')
+    link(rel='stylesheet',href='./idangerous.swiper.css')
+    script(type='text/javascript',src='./idangerous.swiper.min.js')
+    script(type='text/javascript',src='./main.js')
+  body
+    .slots.swiper-container
+      .swiper-wrapper
+        .slot.swiper-slide
+          h2 First Slot
+        .slot.multi-slot.swiper-container.row
+            .swiper-wrapper
+              .slot.swiper-slide.col-md-4.col-xs-12
+                h2 Second Slot
+                h3 First Track
+              .slot.swiper-slide
+                h2 Second Slot
+                h3 Second Track
